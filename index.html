@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>个人网站</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+      nav { background-color: #333; color: #fff; padding: 10px; text-align: center; }
+      nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+      nav a:hover { text-decoration: underline; }
+      /* img {
+            margin-top: 20px;
+            width: 200px;
+            height: 100;
+            border-radius: 33%;
+            border: 3px solid #82ced1;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        } */
+
+      /* 图片1样式 */
+      .image-one {
+      float: right;
+      margin: 20px;
+      width: 150px;
+      height: auto;
+      border-radius: 33%;
+      border: 3px solid #e0e7e7;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);      
+        }
+
+      /* 图片2样式 */
+      .image-two {
+            margin: 0px left;
+            /* display: block; */
+            width: 550px;    /* 第二张图片宽度 */
+            height: auto;
+            border-radius: 0%; /* 完全圆形 */
+            border: 0px solid #ff7f50;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 标题样式 */
+        h1 {
+            text-align: center;         /* 居中对齐 */
+            font-size: 48px;            /* 字体大小 */
+            font-family: "Georgia", serif; /* 字体样式 */
+            color: #333;                /* 字体颜色 */
+            font-weight: bold;          /* 加粗 */
+            margin-top: 10px;           /* 顶部外边距 */
+            margin-bottom: 50px; /* 下边距 */
+
+        }
+        /* 标题样式 */
+        p1 {
+            text-align: center;         /* 居中对齐 */
+            font-size: 18px;            /* 字体大小 */
+            font-family: "Georgia", serif; /* 字体样式 */
+            color: #333;                /* 字体颜色 */
+            font-weight: bold;          /* 加粗 */
+            margin-top: 30px;           /* 顶部外边距 */
+            margin-bottom: 20px; /* 下边距 */
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Items</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <div style="padding: 20px;">
+      <!-- 插入图片 -->
+      <img src="C:/Users/User/Desktop/personalweb/images/2022.jpg" alt="个人照片"class="image-one">
+
+      <h1>Welcome to Qianqian Jin's Profolio</h1>
+
+      <p1>Brief description for my Research</p1>
+
+      <!-- 居中显示 -->
+      <img src="images/profile.jpg" alt="个人照片" class="centered">
+
+      <!-- 左对齐 -->
+      <div class="clearfix">
+            <img src="C:/Users/User/Desktop/personalweb/images/Picture3.png" alt="个人照片" class="left-aligned">
+            <p>左对齐图片示例文本：这是个人网站上的图片，浮动在左侧。</p>
+      </div>
+
+      <!-- 右对齐 -->
+      <div class="clearfix">
+
+      <img src="C:/Users/User/Desktop/personalweb/images/Picture1.png" alt="picture3" class="image-two">
+      <p>右对齐图片示例文本：这是个人网站上的图片，浮动在右侧。</p>
+      </div>
+
+      <!-- 绝对定位 -->
+      <img src="C:/Users/User/Desktop/personalweb/images/Picture4.png" alt="个人照片" class="absolute-position">
+
+
+
+
+        <p>感谢您的访问！</p>
+
+    </div>
+</body>
+</html>
