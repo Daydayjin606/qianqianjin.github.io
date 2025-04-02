@@ -2,42 +2,72 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>个人网站</title>
+    <title>Qianqian Jin's Website</title>
     <style>
       body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
-      nav { background-color: #333; color: #fff; padding: 10px; text-align: center; }
-      nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+      nav { background-color: #333; color: #f4f4f4; padding: 10px; text-align: center; }
+      nav a { color: #f4f4f4; margin: 0 10px; text-decoration: none; }
       nav a:hover { text-decoration: underline; }
-      /* img {
-            margin-top: 20px;
-            width: 200px;
-            height: 100;
-            border-radius: 33%;
-            border: 3px solid #82ced1;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-        } */
 
       /* 图片1样式 */
       .image-one {
       float: right;
-      margin: 20px;
+      margin: 10px;
       width: 150px;
       height: auto;
       border-radius: 33%;
-      border: 3px solid #e0e7e7;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);      
+      border: 3px solid #f4f4f4;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);  
+      margin-top: 0px;           /* 顶部外边距 */
+        }
+
+        .icon-list {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+        /* display: flex; */
+        gap: 1rem;
+        list-style: none;
         }
 
       /* 图片2样式 */
-      .image-two {
+      .left {
             margin: 0px left;
             /* display: block; */
-            width: 550px;    /* 第二张图片宽度 */
+            width: 650px;    /* 第二张图片宽度 */
             height: auto;
             border-radius: 0%; /* 完全圆形 */
-            border: 0px solid #ff7f50;
+            border: 0px solid #f4f4f4;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;           /* 顶部外边距 */
+            margin-bottom: 30px; /* 下边距 */
         }
+
+      /* 图片3样式 */
+      .center {
+                display: block;         /* 使图片成为块级元素 */
+                margin: 25px auto;      /* 上下间距为25px，左右自动居中 */
+                width: 250px;           /* 图片宽度 */
+                height: auto;           /* 保持原比例 */
+                border-radius: 5%;      /* 无圆角 */
+                border: 0px solid #f4f4f4;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+                margin-bottom: 30px; /* 下边距 */
+            }
+
+    /* 图片2样式 */
+      .right {
+            margin: 0px right;
+            /* display: block; */
+            width: 650px;    /* 第二张图片宽度 */
+            height: auto;
+            border-radius: 0%; /* 完全圆形 */
+            border: 0px solid #f4f4f4;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;           /* 顶部外边距 */
+            margin-bottom: 20px; /* 下边距 */
+        }
+
 
         /* 标题样式 */
         h1 {
@@ -47,64 +77,343 @@
             color: #333;                /* 字体颜色 */
             font-weight: bold;          /* 加粗 */
             margin-top: 10px;           /* 顶部外边距 */
-            margin-bottom: 50px; /* 下边距 */
+            margin-bottom: 30px; /* 下边距 */
 
         }
         /* 标题样式 */
         p1 {
             text-align: center;         /* 居中对齐 */
-            font-size: 18px;            /* 字体大小 */
+            font-size: 25px;            /* 字体大小 */
             font-family: "Georgia", serif; /* 字体样式 */
             color: #333;                /* 字体颜色 */
             font-weight: bold;          /* 加粗 */
-            margin-top: 30px;           /* 顶部外边距 */
-            margin-bottom: 20px; /* 下边距 */
-
+            margin-top: 60px;           /* 顶部外边距 */
+            margin-bottom: 10px;  
         }
+        p       {
+                text-align: left;         /* 居中对齐 */
+                font-size: 18px;            /* 字体大小 */
+                font-family: "Georgia", serif; /* 字体样式 */
+                color: #333;                /* 字体颜色 */
+                /* font-weight: bold;          加粗 */
+                margin-top: 15px;           /* 顶部外边距 */
+                margin-bottom: 20px; /* 下边距 */
+                letter-spacing: 1px;       /* 字符间距 */
+                line-height: 1.5;          /* 行高 */
+                word-spacing: 1px;         /* 单词间距 */
+                        /* text-align: justify;       两端对齐 */
 
+                }
 
+    .text-box {
+                width: 800px;           /* 限制宽度为300像素 */
+                margin: 20px auto;      /* 居中显示 */
+                padding: 20px;          /* 内边距 */
+                font-size: 20px;            /* 字体大小 */
+                font-family: "Georgia", serif; /* 字体样式 */
+                line-height: 1.5;          /* 行高 */
+
+                color: #000000;            /* 文字颜色 */
+                background-color: #f4f4f4;  /* 背景颜色 */
+                border: 0px solid #ccc; /* 边框 */
+                border-radius: 2px;     /* 圆角 */
+                text-align: left;     /* 文本居中 */
+                word-wrap: break-word;  /* 自动换行 */
+                /* word-break: break-all;  强制换行，避免溢出 */
+                /* overflow: hidden;       隐藏超出内容 */
+            }
+
+    /* Flex 容器 */
+    .flex-container {
+                display: flex;               /* 使用 Flex 布局 */
+                align-items: center;         /* 垂直居中对齐 */
+                gap: 20px;                   /* 图片和文本之间的间距 */
+                margin: 20px auto;           /* 整体居中 */
+                padding: 10px;
+                background-color: #f4f4f4;   /* 背景颜色 */
+                border-radius: 8px;          /* 圆角边框 */
+                /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 阴影效果 */
+                margin-top: 20; /* 下边距 */
+                margin-bottom: 20; /* 下边距 */
+            }
     </style>
 
+
 </head>
-<body>
+
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#projects">Items</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Research Project</a>
+        <a href="#contactme">Contact me</a>
     </nav>
-    <div style="padding: 20px;">
-      <!-- 插入图片 -->
-      <img src="C:/Users/User/Desktop/personalweb/images/2022.jpg" alt="个人照片"class="image-one">
 
+  
+
+      <div style="
+      height: 400px;
+      background-image: url('images/header-background.webp');  /* 新的背景图 */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+    ">
       <h1>Welcome to Qianqian Jin's Profolio</h1>
+    </div>
 
-      <p1>Brief description for my Research</p1>
 
-      <!-- 居中显示 -->
-      <img src="images/profile.jpg" alt="个人照片" class="centered">
 
-      <!-- 左对齐 -->
-      <div class="clearfix">
-            <img src="C:/Users/User/Desktop/personalweb/images/Picture3.png" alt="个人照片" class="left-aligned">
-            <p>左对齐图片示例文本：这是个人网站上的图片，浮动在左侧。</p>
-      </div>
-
-      <!-- 右对齐 -->
-      <div class="clearfix">
-
-      <img src="C:/Users/User/Desktop/personalweb/images/Picture1.png" alt="picture3" class="image-two">
-      <p>右对齐图片示例文本：这是个人网站上的图片，浮动在右侧。</p>
-      </div>
-
-      <!-- 绝对定位 -->
-      <img src="C:/Users/User/Desktop/personalweb/images/Picture4.png" alt="个人照片" class="absolute-position">
+    <div style="padding: 10px;">
+        <!-- 插入图片 -->
+        <img src="C:/Users/User/Desktop/personalweb/images/2022.jpg" alt="个人照片"class="image-one">
+  
 
 
 
 
-        <p>感谢您的访问！</p>
+
+
+
+<section id="home">
+
+      <p1>Brief description </p1>
+      
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+            I am a Ph.D. in Civil Engineering from the University of Central Florida, 
+            specializing in <strong className="text-stone-100"> Traffic Safety Research</strong>. <br> 
+            Currently, I am <strong className="text-stone-100", style="font-size: large;">
+              Open to Work.</strong>
+        
+        In my academic period, I expert in surrogate safety measures to 
+        quantitatively assess conflict risks across diverse scenarios, 
+        including adverse weather conditions, 
+          unsignalized intersections and right-turning scenarios. 
+        By leveraging statistical models and deep learning models based on traffic datasets, 
+        I conducted a comprehensive conflict risk analysis and developed predictive models.
+    </p>
+<br>
+<br>
+
+    <ul style="display: flex; gap: 1rem; list-style: none; padding: 0; justify-content: flex-end; margin-right: 20px;">
+
+        <li>
+          <a href="https://github.com/Daydayjin606" target="_blank">
+            <img src="images/github-icon.png" alt="GitHub" width="40" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/qianqian-jin-06b0ba257/" target="_blank">
+            <img src="images/linkedin-icon.png" alt="LinkedIn" width="40" />
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=8K8j7IsAAAAJ" target="_blank">
+            <img src="images/googlescholar-icon.png" alt="Google Scholar" width="40" />
+          </a>
+        </li>
+      </ul>
+
+
+
+     <!-- 左对齐 -->
+     <div class="clearfix">
+      <img src="C:/Users/User/Desktop/personalweb/images/Picture5.png" alt="surrogate safety measures" class="center">
+    </div>
+</section>
+
+
+
+
+<section id="skills">
+     
+    <p1>Skills &amp; Abilities</p1>
+    <ul style="list-style: none; padding-left: 12px; line-height: 1.6; font-size: 2ch; margin-bottom: 3pc;">
+      <li style="margin: 3px; font-family:Georgia, serif;"> ✓  Programming Language: Python, R, SQL</li>       
+      <li style="margin: 3px; font-family:Georgia, serif;"> ✓  Machine Learning Frameworks: PyTorch, Scikit-learn</li>
+      <li style="margin: 3px; font-family:Georgia, serif;"> ✓  Modeling Techniques: Statistical Models, Machine Learning Model, Deep Learning Model</li>
+      <li style="margin: 3px; font-family:Georgia, serif;"> ✓  Engineering Techniques: CATIA, Inventor, MATLAB/Simulink, SiLAB </li>
+    </ul>
+    
+
+
+
+<section id="projects">
+    <p1 style='margin-top: 600px;'> Research & Projects</p1>
+
+<!-- 左对齐 -->
+<div class="clearfix">
+    <div class="flex-container">
+        <!-- 图片 -->
+        <img src="C:/Users/User/Desktop/personalweb/images/unsignalizedintersection.png" alt="unsignalizedintersection" class="left">
+
+        <!-- 文本框 -->
+        <div class="text-box">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0001457525000296" target="_blank">
+                - Assessing conflict likelihood and its severity at interconnected intersections: Insights from drone trajectory data</a><br>
+
+            Most studies analyzing crash factors at unsignalized intersections focus solely on the isolated intersection itself. 
+            This study investigates how proximity to signalized intersections affects traffic conflicts at unsignalized intersections. 
+            We utilized <strong className="text-stone-100">microscopic high-resolution trajectory dataset</strong> extracted from the CitySim drone dataset. 
+            To represent real dangerous events, conflict probability and severity were introduced and assessed using two surrogate safety measures.
+            A Structural Equation Model is applied to explore 
+            the <strong className="text-stone-100">interactive relationship</strong> within the interconnected intersections. 
+            
+            </div>
+    </div>
+</div>
+
+
+<!-- 右对齐 -->
+
+<div class="clearfix">
+    <div class="flex-container">
+        <!-- 文本框 -->
+        <div class="text-box">
+            <a href="https://github.com/Daydayjin606/Conflict_detection" target="_blank">
+                - Real-time traffic conflict detection by using deep learning method</a><br>
+
+            <strong className="text-stone-100">Real-time large-scale conflict estimation</strong> is still a challenge due to high efficiency requirement. 
+            To tackle this challenge, we propose a novel approach leveraging deep learning models for real-time conflict detection. 
+            We divided drone videos into sequential frames and  <strong className="text-stone-100">paired consecutive frames</strong> as input for deep neural networks. 
+            Conflict events, estimated by conflict measures, are labeled as learning outputs. Time to collision (TTC) 
+            is used as an alternative metric for conflict detection, and the data is processed by selecting 
+            the minimum TTC within each frame to identify conflicting events. 
+            Through training,  <strong className="text-stone-100">deep neural networks (ResNet-101)</strong> learn to detect conflict with paired frame image features. 
+            The results on the testing set are promising, 
+            achieving 91% detection accuracy, 84% precision, and 81% F1 score. 
+            A key advantage of our approach lies in its efficiency during inference without trajectory processing, requiring only milliseconds.
+            
+            </div>
+
+            <!-- 图片 -->
+                <img src="C:/Users/User/Desktop/personalweb/images/Picture1.png" alt="picture3" class="right">
 
     </div>
+</div>
+
+
+<!-- 左对齐 -->
+<div class="clearfix">
+    <div class="flex-container">
+        <!-- 图片 -->
+        <img src="C:/Users/User/Desktop/personalweb/images/weather.png" alt="weather" class="left">
+
+        <!-- 文本框 -->
+        <div class="text-box">
+            <a href="https://journals.sagepub.com/doi/abs/10.1177/03611981241298683" target="_blank">
+                - Identifying the Threshold Discrepancy of Rear-End Conflicts under Clear and Rainy Weather Conditions Using Trajectory Data</a><br>
+
+            Adverse weather conditions have been examined for their impact on safety events estimated from surrogate metrics, 
+            however, limited research focuses on discrepancies in SSM thresholds under 
+            <strong className="text-stone-100"> various weather characteristics </strong>
+            This study investigated specific thresholds for different surroage safety measures under clear and light rainy weather conditions based on drone trajectory dataset. 
+            The results indicate that thresholds of MTTC and DRAC metrics have statistically significant differences under two weather scenarios.
+            These findings can inform the design of active safety systems and traffic safety policies 
+            by suggesting different safety thresholds for triggering safety systems under clear and rainy conditions, 
+            thereby reducing false alarms.
+
+
+            </div>
+    </div>
+</div>
+
+
+<!-- 右对齐 -->
+<div class="clearfix">
+    <div class="flex-container">
+        <!-- 文本框 -->
+        <div class="text-box">
+
+            <a href="https://journals.sagepub.com/doi/abs/10.1177/03611981221121270" target="_blank">
+                - Probabilistic Prediction of Collisions between Cyclists and Vehicles Based on Uncertainty of Cyclists’ Movements</a><br>
+
+                This study proposes a probabilistic method to assess collision risk between cyclists and vehicles by accounting 
+                for the uncertainty in cyclists’ movements. Using a first-order Markov model and Monte Carlo sampling, the study 
+                estimates collision probabilities based on distributions of minimum distance and time-to-collision. Compared to a 
+                traditional AEB system, the proposed model shows higher accuracy in predicting collision risk in real-world crash cases, 
+                offering valuable insights for improving vehicle safety systems for cyclists.
+
+
+
+
+            <strong className="text-stone-100"></strong>
+
+            </div>
+
+            <!-- 图片 -->
+                <img src="images/probability.png" alt="picture3" class="right">
+
+    </div>
+</div>
+
+
+
+<!-- 左对齐 -->
+<div class="clearfix">
+    <div class="flex-container">
+        <!-- 图片 -->
+        <img src="images/AEB.png" alt="weather" class="left">
+
+        <!-- 文本框 -->
+        <div class="text-box">
+            - China Automotive Safety Technology Conference Paper<br>
+
+            The main idea of the study is to evaluate the effectiveness of AEB (Advanced Emergency Braking) systems 
+            in real-world VRUs crashes under different road conditions. 
+            By analyzing 313 pedestrian crash cases using hierarchical clustering, 
+            the study identifies seven typical crash scenarios. It then uses detailed reconstructions of 
+            two cases to test an AEB system with a staged braking control strategy based on the TTC (Time-to-Collision) model. 
+            The results highlight how 
+            obstacles and high-speed conditions impact AEB performance and emphasize the importance of realistic scenario-based testing.
+
+            </div>
+    </div>
+</div>
+
+
+
+
+</section>
+
+
+<section id="contactme">
+    <h2>Contact me</h2>
+    <p>If you have any questions, please feel free to contact me, Thank you !</p>
+
+    <p>
+        📧 Email: 
+        <a href="mailto:qianqianjin010@gmail.com">qianqianjin010@gmail.com</a>
+      </p>
+
+      <ul style="display: flex; gap: 3rem; list-style: none; padding: 0;">
+
+        <li>
+          <a href="https://github.com/Daydayjin606" target="_blank">
+            <img src="images/github-icon.png" alt="GitHub" width="62" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/qianqian-jin-06b0ba257/" target="_blank">
+            <img src="images/linkedin-icon.png" alt="LinkedIn" width="62" />
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=8K8j7IsAAAAJ" target="_blank">
+            <img src="images/googlescholar-icon.png" alt="Google Scholar" width="62" />
+          </a>
+        </li>
+      </ul>
+
+  </section>
+
+
+
+<div style="text-align: center; margin-top: 30px;">
+    <p style="font-size: 15px; text-align: center;"> © 2025 Qianqian Jin. All rights reserved.</p>
+  </div> 
+  
 </body>
 </html>

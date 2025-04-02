@@ -1,0 +1,44 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
+function Home() {
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold">Research Consulting Platform</h1>
+      <p className="mt-4 text-lg">Providing professional research guidance and consultation for PhD and Postdoc researchers.</p>
+      <Button className="mt-4">Learn More</Button>
+    </div>
+  );
+}
+
+function MentorProfile() {
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-semibold">Mentor Profile</h2>
+      <Card className="mt-4 p-4">
+        <CardContent>
+          <h3 className="text-xl">Dr. John Doe</h3>
+          <p className="mt-2">Expert in Traffic Safety and Machine Learning</p>
+          <Button className="mt-4">Book a Consultation</Button>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="bg-gray-100 min-h-screen">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/mentor" component={MentorProfile} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
