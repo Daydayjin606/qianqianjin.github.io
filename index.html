@@ -31,50 +31,56 @@
         }
 
       /* 图片2样式 */
-      .left {
-            margin: 0px left;
-            /* display: block; */
-            width: 650px;    /* 第二张图片宽度 */
-            height: auto;
-            border-radius: 0%; /* 完全圆形 */
-            border: 0px solid #f4f4f4;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-            margin-top: 5px;           /* 顶部外边距 */
-            margin-bottom: 30px; /* 下边距 */
-            margin-left: 8pc;
-        }
+
+
+        .left {
+    width: 650px;    /* 第二张图片宽度 */
+    height: auto;
+    border-radius: 0%; /* 完全圆形 */
+    border: 0px solid #f4f4f4;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;           /* 顶部外边距 */
+    margin-bottom: 20px; /* 下边距 */
+    margin-left: auto;   /* 左右自动分配空间 */
+    margin-right: auto;  /* 左右自动分配空间 */
+    display: block;      /* 必须是块级元素才能居中 */
+}
+
 
       /* 图片3样式 */
       .center {
                 display: block;         /* 使图片成为块级元素 */
-                margin: 25px auto;      /* 上下间距为25px，左右自动居中 */
-                width: 250px;           /* 图片宽度 */
+                margin: 5px auto;      /* 上下间距为25px，左右自动居中 */
+                width: 1250px;           /* 图片宽度 */
                 height: auto;           /* 保持原比例 */
                 border-radius: 5%;      /* 无圆角 */
                 border: 0px solid #f4f4f4;
-                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-                margin-bottom: 30px; /* 下边距 */
+                margin-bottom: 50px; /* 下边距 */
             }
 
     /* 图片2样式 */
-      .right {
-            margin: 0px right;
-            /* display: block; */
-            width: 650px;    /* 第二张图片宽度 */
-            height: auto;
-            border-radius: 0%; /* 完全圆形 */
-            border: 0px solid #f4f4f4;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-            margin-top: 5px;           /* 顶部外边距 */
-            margin-bottom: 20px; /* 下边距 */
-            margin-right: 8pc;
-        }
+
+
+        .right {
+    width: 650px;    /* 第二张图片宽度 */
+    height: auto;
+    border-radius: 0%; /* 完全圆形 */
+    border: 0px solid #f4f4f4;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;           /* 顶部外边距 */
+    margin-bottom: 20px; /* 下边距 */
+    margin-left: auto;   /* 左右自动分配空间 */
+    margin-right: auto;  /* 左右自动分配空间 */
+    display: block;      /* 必须是块级元素才能居中 */
+}
+
+
 
 
         /* 标题样式 */
         h1 {
             text-align: center;         /* 居中对齐 */
-            font-size: 48px;            /* 字体大小 */
+            font-size: 68px;            /* 字体大小 */
             font-family: "Georgia", serif; /* 字体样式 */
             color: #333;                /* 字体颜色 */
             font-weight: bold;          /* 加粗 */
@@ -222,8 +228,10 @@
 
      <!-- 左对齐 -->
      <div class="clearfix">
-      <img src="C:/Users/User/Desktop/personalweb/images/Picture5.png" alt="surrogate safety measures" class="center">
+      <img src="C:/Users/User/Desktop/personalweb/images/intro2.png" alt="surrogate safety measures" class="center">
     </div>
+
+    <p style="text-align: center;"> Figure 1 Roadmap of Traffic Safety Research Throughout My Academic Journey  </p>
 </section>
 
 
@@ -382,10 +390,12 @@
 
 
 <section id="contactme">
+
     <h2>Contact me</h2>
+
     <p>If you have any questions, please feel free to contact me, Thank you !</p>
 
-    <p>
+    <p style="text-align: left;">
         📧 Email: 
         <a href="mailto:qianqianjin010@gmail.com">qianqianjin010@gmail.com</a>
       </p>
@@ -408,14 +418,48 @@
           </a>
         </li>
       </ul>
-
+  
   </section>
 
 
 
-<div style="text-align: center; margin-top: 30px;">
-    <p style="font-size: 15px; text-align: center;"> © 2025 Qianqian Jin. All rights reserved.</p>
-  </div> 
-  
+
+  <div style="
+  height: 77px;
+  background-image: url('images/AM.png');  /* 新的背景图 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+">
+    <!-- <p style="font-size: 15px; text-align: center; "> 
+      When everything that can be removed from ourself is removed, 
+      then what remain is what we essentailly are.
+    </p> 
+    <br>
+
+    <p style="font-size: 15px; text-align: center; "> © 2025 Qianqian Jin. All rights reserved.</p>
+ -->
+
+
+ <div style="text-align: center; padding: 20px; background-color: transparent;">
+  <p style="font-size: 15px; margin: 0 0 10px 0;">
+    When everything that can be removed from ourself is removed,
+    then what remain is what we essentially are.
+  </p>
+
+  <p style="font-size: 15px; margin: 10px 0 0 0; text-align: center;">
+    © 2025 Qianqian Jin. All rights reserved.
+  </p>
+</div>
+
+
+  </div>
+
+
+
 </body>
 </html>
