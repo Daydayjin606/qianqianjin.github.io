@@ -161,7 +161,7 @@
 
       <div style="
       height: 450px;
-      background-image: url('images/header-background.webp');  /* 新的背景图 */
+      background-image: url('images/back2.png');  /* 新的背景图 */
       background-size: cover;
       background-position: center;
       display: flex;
@@ -203,7 +203,7 @@
 <br>
 
     <ul style="display: flex; gap: 1rem; list-style: none; padding: 0; justify-content: flex-end; margin-right: 20px;">
-<p style="font-family:Georgia, serif;"> social: </p>
+<p style="font-family:Georgia, serif;"> Social  </p>
         <li>
           <a href="https://github.com/Daydayjin606" target="_blank">
             <img src="images/github-icon.png" alt="GitHub" width="40" />
@@ -248,29 +248,62 @@
 
 <section id="projects">
     <p1 style='margin-top: 20px;'> Research & Projects</p1>
+
+<!-- 左对齐 -->
+<div class="clearfix">
+    <div class="flex-container">
+
+        <!-- 图片 -->
+        <img src="images/Picture7.png" alt="picture3" class="left">
+
+        <!-- 文本框 -->
+        <div class="text-box">
+        - Understanding the scenarios based on Vision Language Model (Manuscript in preparation) <br>
+        
+        Developed a  <strong className="text-stone-100">conflict risk assessment framework</strong>  for intersections, 
+        focusing on right-turn interactions between vehicles and vulnerable road users (VRUs). 
+        The approach integrates the <strong className="text-stone-100">SigLIP 2 vision-language model</strong> with region-level captioning to 
+        jointly understand visual scenes and classify conflict risk levels. This work enables automated, 
+        <strong className="text-stone-100">real-time risk analysis </strong>and supports the deployment of smart safety systems.
+            </div>
+
+    </div>
+    <p style="text-align: left;"> Figure 2 Conflict Risks Evaluation based on Vision Language Model  </p>
+
+</div>
+
+
+
+
+
 <!-- 右对齐 -->
+
 <div class="clearfix">
   <div class="flex-container">
       <!-- 文本框 -->
       <div class="text-box">
-          
-              - Paper Manuscript in preparation <br>
+              - Real-time traffic conflict detection by using deep learning method (Under review)<br>
+         
+          This study explores <strong className="text-stone-100">pedestrian-vehicle conflicts</strong> during right turns 
+          at signalized intersections in right-hand traffic countries. 
+          By combining <strong className="text-stone-100">268 crash reports</strong> and <strong className="text-stone-100">275 conflict cases</strong>, 
+          the study emphasizes how analyzing conflict-related factors can serve as pre-crash indicators, 
+          offering early warning signs that help prevent future crashes. 
+          Conflict risks are quantitatively evaluated using PET and RTTC metrics, 
+          with RTTC demonstrating superior predictive performance—thresholds were identified for Approach and Departure crosswalks. 
+          The analysis identified four distinct interaction patterns shaped by crosswalk type and pedestrian movement direction. 
 
-          <strong className="text-stone-100">Real-time large-scale conflict estimation</strong> 
-          
-          Developed a  <strong className="text-stone-100">conflict risk assessment framework</strong>  for intersections, 
-          focusing on right-turn interactions between vehicles and vulnerable road users (VRUs). 
-          The approach integrates the <strong className="text-stone-100">SigLIP 2 vision-language model</strong> with region-level captioning to 
-          jointly understand visual scenes and classify conflict risk levels. This work enables automated, 
-          <strong className="text-stone-100">real-time risk analysis </strong>and supports the deployment of smart safety systems.
           </div>
+
           <!-- 图片 -->
-              <img src="images/Picture7.png" alt="picture3" class="right">
+              <img src="images/ped.png" alt="picture3" class="right">
 
   </div>
-  <p style="text-align: right;"> Figure 2 Conflict Risks Evaluation based on Vision Language Model  </p>
+  <p style="text-align: right;"> Figure 3 Interaction Patterns between Right-Turning Vehicles and Pedestrians at Signalized Intersections </p>
 
 </div>
+
+
 
 
 
@@ -288,7 +321,7 @@
         <!-- 文本框 -->
         <div class="text-box">
             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0001457525000296" target="_blank">
-                - Assessing conflict likelihood and its severity at interconnected intersections: Insights from drone trajectory data</a><br>
+                - Assessing conflict likelihood and its severity at interconnected intersections: Insights from drone trajectory data (AAP)</a><br>
 
             Most studies analyzing crash factors at unsignalized intersections focus solely on the isolated intersection itself. 
             This study investigates how proximity to signalized intersections affects traffic conflicts at unsignalized intersections. 
@@ -301,7 +334,7 @@
             </div>
 
     </div>
-    <p style="text-align: left;"> Figure 3 Base Map of Interconnected Intersection  </p>
+    <p style="text-align: left;"> Figure 4 Base Map of Interconnected Intersection  </p>
 
 </div>
 
@@ -313,7 +346,7 @@
         <!-- 文本框 -->
         <div class="text-box">
             <a href="https://github.com/Daydayjin606/Conflict_detection" target="_blank">
-                - Real-time traffic conflict detection by using deep learning method</a><br>
+                - Real-time traffic conflict detection by using deep learning method (Under review)</a><br>
 
             <strong className="text-stone-100">Real-time large-scale conflict estimation</strong> is still a challenge due to high efficiency requirement. 
             To tackle this challenge, we propose a novel approach leveraging deep learning models for real-time conflict detection. 
@@ -332,7 +365,7 @@
                 <img src="images/Picture1.png" alt="picture3" class="right">
 
     </div>
-    <p style="text-align: right;"> Figure 4 Conflict Detection Models based on Drone Videos  </p>
+    <p style="text-align: right;"> Figure 5 Real-time Conflict Detection Models based on Drone Videos  </p>
 
 </div>
 
@@ -346,7 +379,7 @@
         <!-- 文本框 -->
         <div class="text-box">
             <a href="https://journals.sagepub.com/doi/abs/10.1177/03611981241298683" target="_blank">
-                - Identifying the Threshold Discrepancy of Rear-End Conflicts under Clear and Rainy Weather Conditions Using Trajectory Data</a><br>
+                - Identifying the Threshold Discrepancy of Rear-End Conflicts under Clear and Rainy Weather Conditions Using Trajectory Data (TRR)</a><br>
 
             Adverse weather conditions have been examined for their impact on safety events estimated from surrogate metrics, 
             however, limited research focuses on discrepancies in SSM thresholds under 
@@ -360,7 +393,7 @@
 
             </div>
     </div>
-    <p style="text-align: left;"> Figure 5 Trajectory Drone Data under Different Weather Conditions  </p>
+    <p style="text-align: left;"> Figure 6 Trajectory Drone Data under Different Weather Conditions  </p>
 
 </div>
 
@@ -372,15 +405,15 @@
         <div class="text-box">
 
             <a href="https://journals.sagepub.com/doi/abs/10.1177/03611981221121270" target="_blank">
-                - Probabilistic Prediction of Collisions between Cyclists and Vehicles Based on Uncertainty of Cyclists’ Movements</a><br>
+                - Probabilistic Prediction of Collisions between Cyclists and Vehicles Based on Uncertainty of Cyclists’ Movements (TRR)</a><br>
 
-                This study proposes a probabilistic method to assess collision risk between cyclists and vehicles by accounting 
-                for the uncertainty in cyclists’ movements. Using a first-order Markov model and Monte Carlo sampling, the study 
-                estimates collision probabilities based on distributions of minimum distance and time-to-collision. Compared to a 
-                traditional AEB system, the proposed model shows higher accuracy in predicting collision risk in real-world crash cases, 
+                This study proposes <strong className="text-stone-100">a probabilistic method to assess collision risk</strong> between cyclists and vehicles by accounting 
+                for the uncertainty in cyclists’ movements. 
+                Using <strong className="text-stone-100">a first-order Markov model </strong>
+                and <strong className="text-stone-100">Monte Carlo sampling</strong>, 
+                the study estimates collision probabilities based on distributions of minimum distance and time-to-collision. 
+                Compared to a traditional AEB system, the proposed model shows higher accuracy in predicting collision risk in real-world crash cases, 
                 offering valuable insights for improving vehicle safety systems for cyclists.
-
-
 
 
             <strong className="text-stone-100"></strong>
@@ -392,34 +425,7 @@
 
     </div>
 
-    <p style="text-align: right;"> Figure 6 Flowchart of quantitative estimation of collision risk between vehicles and vulnerable road users </p>
-
-</div>
-
-
-
-<!-- 左对齐 -->
-<div class="clearfix">
-    <div class="flex-container">
-        <!-- 图片 -->
-        <img src="images/AEB.png" alt="weather" class="left">
-
-        <!-- 文本框 -->
-        <div class="text-box">
-            - China Automotive Safety Technology Conference Paper<br>
-
-            The main idea of the study is to evaluate the effectiveness of AEB (Advanced Emergency Braking) systems 
-            in real-world VRUs crashes under different road conditions. 
-            By analyzing 313 pedestrian crash cases using hierarchical clustering, 
-            the study identifies seven typical crash scenarios. It then uses detailed reconstructions of 
-            two cases to test an AEB system with a staged braking control strategy based on the TTC (Time-to-Collision) model. 
-            The results highlight how 
-            obstacles and high-speed conditions impact AEB performance and emphasize the importance of realistic scenario-based testing.
-
-            </div>
-    </div>
-
-    <p style="text-align: left;"> Figure 7 Euro-NCAP-based Control Design Validation for Automatic Emergency Systems  </p>
+    <p style="text-align: right;"> Figure 7 Flowchart of quantitative estimation of collision risk between vehicles and vulnerable road users </p>
 
 </div>
 
@@ -466,7 +472,7 @@
 
   <div style="
   height: 77px;
-  background-image: url('images/AM.png');  /* 新的背景图 */
+  background-image: url('images/back2.png');  /* 新的背景图 */
   background-size: cover;
   background-position: center;
   display: flex;
