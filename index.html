@@ -12,7 +12,7 @@
       /* 图片1样式 */
       .image-one {
       float: right;
-      margin: 10px;
+      margin: 20px;
       width: 150px;
       height: auto;
       border-radius: 33%;
@@ -95,8 +95,9 @@
             font-family: "Georgia", serif; /* 字体样式 */
             color: #333;                /* 字体颜色 */
             font-weight: bold;          /* 加粗 */
-            margin-top: 60px;           /* 顶部外边距 */
-            margin-bottom: 10px;  
+            margin-top: 20px;           /* 顶部外边距 */
+            margin-bottom: 10px; 
+            
         }
         p       {
                 text-align: left;         /* 居中对齐 */
@@ -159,7 +160,7 @@
   
 
       <div style="
-      height: 400px;
+      height: 450px;
       background-image: url('images/header-background.webp');  /* 新的背景图 */
       background-size: cover;
       background-position: center;
@@ -174,21 +175,17 @@
 
 
 
-    <div style="padding: 10px;">
+    <div style="padding: 10px;padding-top: 30px;">
         <!-- 插入图片 -->
-        <img src="images/2022.jpg" alt="个人照片"class="image-one">
+        <img src="images/qq.png" alt="个人照片"class="image-one">
   
-
-
-
-
-
 
 
 <section id="home">
 
-      <p1>Brief description </p1>
-      
+      <!-- <p1>Brief description </p1> -->
+      <p1>Brief description</p1>
+
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
             I am a Ph.D. in Civil Engineering from the University of Central Florida, 
             specializing in <strong className="text-stone-100"> Traffic Safety Research</strong>. <br> 
@@ -206,7 +203,7 @@
 <br>
 
     <ul style="display: flex; gap: 1rem; list-style: none; padding: 0; justify-content: flex-end; margin-right: 20px;">
-
+<p style="font-family:Georgia, serif;"> social: </p>
         <li>
           <a href="https://github.com/Daydayjin606" target="_blank">
             <img src="images/github-icon.png" alt="GitHub" width="40" />
@@ -228,9 +225,8 @@
 
      <!-- 左对齐 -->
      <div class="clearfix">
-      <img src="images/intro3.png" alt="surrogate safety measures" class="center">
+      <img src="images/overview.png" alt="surrogate safety measures" class="center">
     </div>
-
     <p style="text-align: center;"> Figure 1 Roadmap of Traffic Safety Research Throughout My Academic Journey  </p>
 </section>
 
@@ -251,7 +247,37 @@
 
 
 <section id="projects">
-    <p1 style='margin-top: 600px;'> Research & Projects</p1>
+    <p1 style='margin-top: 20px;'> Research & Projects</p1>
+<!-- 右对齐 -->
+<div class="clearfix">
+  <div class="flex-container">
+      <!-- 文本框 -->
+      <div class="text-box">
+          
+              - Paper Manuscript in preparation <br>
+
+          <strong className="text-stone-100">Real-time large-scale conflict estimation</strong> 
+          
+          Developed a  <strong className="text-stone-100">conflict risk assessment framework</strong>  for intersections, 
+          focusing on right-turn interactions between vehicles and vulnerable road users (VRUs). 
+          The approach integrates the <strong className="text-stone-100">SigLIP 2 vision-language model</strong> with region-level captioning to 
+          jointly understand visual scenes and classify conflict risk levels. This work enables automated, 
+          <strong className="text-stone-100">real-time risk analysis </strong>and supports the deployment of smart safety systems.
+          </div>
+          <!-- 图片 -->
+              <img src="images/Picture7.png" alt="picture3" class="right">
+
+  </div>
+  <p style="text-align: right;"> Figure 2 Conflict Risks Evaluation based on Vision Language Model  </p>
+
+</div>
+
+
+
+
+
+
+
 
 <!-- 左对齐 -->
 <div class="clearfix">
@@ -275,7 +301,7 @@
             </div>
 
     </div>
-    <p style="text-align: left;"> Figure 2 Base Map of Interconnected Intersection  </p>
+    <p style="text-align: left;"> Figure 3 Base Map of Interconnected Intersection  </p>
 
 </div>
 
@@ -306,7 +332,7 @@
                 <img src="images/Picture1.png" alt="picture3" class="right">
 
     </div>
-    <p style="text-align: right;"> Figure 3 Conflict Detection Models based on Drone Videos  </p>
+    <p style="text-align: right;"> Figure 4 Conflict Detection Models based on Drone Videos  </p>
 
 </div>
 
@@ -334,7 +360,7 @@
 
             </div>
     </div>
-    <p style="text-align: left;"> Figure 4 Trajectory Drone Data under Different Weather Conditions  </p>
+    <p style="text-align: left;"> Figure 5 Trajectory Drone Data under Different Weather Conditions  </p>
 
 </div>
 
@@ -366,7 +392,7 @@
 
     </div>
 
-    <p style="text-align: right;"> Figure 5 Flowchart of quantitative estimation of collision risk between vehicles and vulnerable road users </p>
+    <p style="text-align: right;"> Figure 6 Flowchart of quantitative estimation of collision risk between vehicles and vulnerable road users </p>
 
 </div>
 
@@ -393,7 +419,7 @@
             </div>
     </div>
 
-    <p style="text-align: left;"> Figure 6 Euro-NCAP-based Control Design Validation for Automatic Emergency Systems  </p>
+    <p style="text-align: left;"> Figure 7 Euro-NCAP-based Control Design Validation for Automatic Emergency Systems  </p>
 
 </div>
 
